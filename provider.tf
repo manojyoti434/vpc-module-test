@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "mano-remote-state"
-    key    = "vpc-test"
+    key    = "vpc-module-test"
     region = "us-east-1"
     encrypt        = true
     use_lockfile = true
@@ -19,3 +19,4 @@ provider "aws" {
   # Configuration options
   region = "us-east-1"
 }
+
